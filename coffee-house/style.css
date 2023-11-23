@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; /*для футера*/
+    display: flex; 
+    flex-direction: column; 
+    margin: 0;
+} 
