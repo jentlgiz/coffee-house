@@ -1,12 +1,160 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+/* common */
 
 html {
     height: 100%; /*для футера*/
-    display: flex; 
     flex-direction: column; 
     margin: 0;
 } 
+
+body {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #E1D4C9;
+    color: var(--text-dark, #403F3D);
+    box-sizing: border-box;
+    padding: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* blocks */
+
+.container {
+    width: 1440px;  /* 1360?*/ 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px; /* для отступа навигации */
+}
+
+.header_nav {
+    background-color: aliceblue;
+    margin: 0 auto;
+    font-weight: 600;
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    align-items: center;
+}
+
+.header_menu ul {
+    display: flex;
+}
+
+.header_menu li {
+    margin-right: 40px; 
+    height: 24px;
+}
+
+.coffee_li {
+    width: 117px;
+}
+
+.about_li {
+    width: 48px;
+}
+
+.app_li {
+    width: 86px;
+}
+
+.contact_li {
+    width: 85px;
+}
+
+.menu_logo {
+    display: flex;
+    width: 44px;
+    height: 24px;
+}
+
+.img_menu {
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.header_menu a:hover {
+    color: #000000; /*временно*/
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header_menu a {
+    transition: color 0.2s ease;
+}
+
+.logo {
+    height: 60px;
+    width: 100px; 
+}
+
+/*enjoy block*/
+
+.header_container {
+    position: relative;
+    margin: 0 auto;
+    background-image: url('./img/img-hero.jpg'); 
+    border-radius: 40px;
+    width: 1360px; 
+    height: 745px; 
+} 
+
+.header_content {
+    position: absolute;
+    background-color: aliceblue;
+    width: 530px;
+    height: 444px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.header_home {
+    color: #D9D9D9; 
+}
+
+.header_text {
+    color: var(--text-light, #E1D4C9);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+/*choose block*/
