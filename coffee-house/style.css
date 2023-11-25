@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 /* common */
 
@@ -10,8 +10,6 @@ html {
 
 body {
     font-family: 'Inter', sans-serif; 
-    font-weight: 600;
-    font-size: 16px;
     background-color: #E1D4C9;
     color: var(--text-dark, #403F3D);
     box-sizing: border-box;
@@ -34,55 +32,60 @@ ul {
 /* blocks */
 
 .container {
-    width: 1440px;  /* 1360?*/ 
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 1360px;  /* 1440?*/ 
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
+
+.container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
 
 /* header */
 
 .header {
-    padding-top: 20px;
     padding-bottom: 20px;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
+    display: flex;  
     padding-top: 20px; /* для отступа навигации */
 }
 
 .header_nav {
-    background-color: aliceblue;
     margin: 0 auto;
     font-weight: 600;
     color: var(--text-dark, #403F3D);
     font-feature-settings: 'clig' off, 'liga' off;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
-    align-items: center;
+}
+
+.header_menu {
+    color: #403F3D;  
+    width: 1188px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .header_menu ul {
     display: flex;
-}
-
-.header_menu li {
-    margin-right: 40px; 
-    height: 24px;
-}
+} 
 
 .coffee_li {
-    width: 117px;
+    width: 157px;
 }
 
 .about_li {
     width: 48px;
+    margin-right: 40px; 
 }
 
 .app_li {
     width: 86px;
+    margin-right: 40px; 
 }
 
 .contact_li {
@@ -91,15 +94,7 @@ ul {
 
 .menu_logo {
     display: flex;
-    width: 44px;
-    height: 24px;
-}
-
-.img_menu {
-    justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
 }
 
 .header_menu a:hover {
@@ -120,7 +115,7 @@ a, a:visited {
     width: 100px; 
 }
 
-/*enjoy block*/
+/* enjoy block */
 
 .header_container {
     position: relative;
@@ -153,8 +148,291 @@ a, a:visited {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 150%; /* 24px */
 }
 
 /*choose block*/
+
+.choose_container {
+    width: 1360px;  /* 1440?*/ 
+    padding-left: 40px;
+    padding-right: 40px; 
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    align-items: center;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.choose_container img {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.favorite_coffee {
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-2 */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: 125%; /* 75px */
+    height: 75px; 
+    margin-top: 100px; 
+}
+
+.favorite {
+    color: var(--text-accent, #B0907A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-2.accent */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    /* font-weight: 600; */
+    line-height: 125%;
+}
+
+.slider_1 {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_2 {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.favorite_description {
+    width: 1360px;  /* 1440?*/ 
+    padding-left: 40px;
+    padding-right: 40px; 
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    column-gap: 100px; 
+    align-items: center;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.coffee_name {
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-3 */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+    margin-bottom: 16px;
+}
+
+.coffee_description {
+    width: 480px;
+    height: 48px;
+    align-self: stretch;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Body/medium */
+    font-size: 16px;
+    font-weight: lighter;
+    /* font-style: normal;
+    font-weight: normal; */
+    line-height: 150%; /* 24px */
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.coffee_price {
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-3 */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+    margin-bottom: 40px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 100px;
+}
+
+.about_container {
+    width: 1360px;  /* 1440?*/ 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_text {
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-2 */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+    margin-bottom: 40px; 
+}
+
+.theperfect_place {
+    color: var(--text-accent, #B0907A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.about_text_container {
+    width: 1360px;  /* 1440?*/ 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_container {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 750px 1fr;
+    height: 1060px;
+    margin-bottom: 100px;
+}
+
+.img_about1 {
+    width: 660px;
+    height: 590px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.img_about2 {
+    width: 660px;
+    height: 590px;
+    margin-left: 40px;
+}
+
+.img_about3 {
+    width: 100%; 
+    height: 430px; 
+    margin: 0; 
+    overflow: hidden; 
+    min-width: 600px; 
+    margin-bottom: 40px;
+}
+
+.img_about4 {
+    width: 660px;
+    height: 590px;
+    margin-right: 40px;
+}
+
+.img_about_1, .img_about_2, .img_about_3, .img_about_4  {
+    border-radius: 20px;
+}
+
+/* download block */
+
+.offer {
+    width: 1360px;  /* 1440?*/ 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.offer_download {
+    width: 680px;
+    /* height: 630px;  */
+    margin-right: 100px;
+    padding-bottom: 40px;
+}
+
+.text_download {
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Body/medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 40px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+}
+
+.button_app_store {
+    margin-right: 20px;
+}
+
+.d_download {
+    color: var(--text-accent, #B0907A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-2.accent */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+}
+
+.download_h2 {
+    color: var(--text-dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Desktop/Heading/heading-2 */
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.offer_mobilescreens {
+    width: 630px;
+    height: 630px;
+}
+
+
+
+/* footer */
+
