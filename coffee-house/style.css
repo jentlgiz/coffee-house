@@ -50,7 +50,7 @@ ul {
 .header {
     /* padding-bottom: 20px; */
     display: flex;  
-    padding-top: 20px; /* для отступа навигации */
+    padding-top: 20px; /*для отступа навигации */
 }
 
 .header_nav {
@@ -122,11 +122,11 @@ a, a:visited {
 
 .header_container {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto; 
     background-image: url('./img/img-hero.jpg'); 
     border-radius: 40px;
     width: 1360px; 
-    height: 745px; 
+    height: 644px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,8 +139,8 @@ a, a:visited {
     grid-template-columns: 530px 1fr;
     width: 1360px;
     height: 644px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    /* margin-top: 100px;  */
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -151,17 +151,18 @@ a, a:visited {
     height: 444px; 
     align-items: center;
     gap: 40px;
+    margin-top: 40px;
 }
 
 /* .header_content_2 {
     margin-left: 100px;
     background-color: beige; 
 } */
-
+/* 
 .header_h1_block {
     /* background-color: black; */
-    margin-bottom: 40px;
-}
+    /* margin-top: 40px;  
+} */
 
 .enjoy {
     color: var(--text-accent, #B0907A);
@@ -187,7 +188,6 @@ a, a:visited {
 
 .menu_button_1 {
     display: flex;
-    width: 200px;
     /* padding: 20px 78px; */
     justify-content: center;
     align-items: center;
@@ -196,7 +196,7 @@ a, a:visited {
     background: var(--background-body, #E1D4C9);
     width: 200px;
     height: 64px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 /* .header_text_block {
@@ -240,9 +240,11 @@ a, a:visited {
     margin: 0 auto;
 }
 
-.choose_container img {
+.coffee_slider {
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
+    width: 480px;
+    height: 480px; 
 }
 
 .favorite_coffee {
