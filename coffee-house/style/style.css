@@ -1,5 +1,5 @@
 @import url(./normalize.css);
-@import url(./_global.css);
+@import url(./global.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 /* common */
@@ -122,7 +122,7 @@ a:visited {
 }
 
 .hero_container {
-  background-image: url(/coffee-house/img/img-hero.jpg);
+  background-image: url(../img/img-hero.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 40px;
