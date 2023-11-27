@@ -805,10 +805,18 @@ a:visited {
 
 .offer_menu {
   background-color: #000000;
+  width: 1360px; 
+  margin-left: 40px;
+  margin-right: 40px; 
 }
 
 .offer_menu_text {
+  /* width: 1360px;  */
   background-color: #403f3d;
+  display: flex;
+  /* margin-left: 40px;
+  margin-right: 40px;  */
+  justify-content: center;
 }
 
 .offer_menu_h1 {
@@ -825,14 +833,28 @@ a:visited {
 
 .offer_menu_choice {
   background-color: #c1b6ad;
+  display: flex;
+  justify-content: center; 
+  margin-top: 40px;
 }
 
 .menu_available {
   background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  /* flex-direction: row; */
+  justify-content: center; 
+  /* align-items: center; */
+  /* flex-wrap: nowrap; */
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .offer_1, .offer_2, .offer_3, .offer_4, .offer_5, .offer_6, .offer_7, .offer_8 {
   background-color: beige;
+  margin-left: 15px;
 }
 
 .offer_1_title,
@@ -844,9 +866,18 @@ a:visited {
 .offer_7_title,
 .offer_8_title {
   background-color: #000000;
+  display: flex; 
+  justify-content: center;
 }
 
 .offer_1_description, .offer_2_description, .offer_3_description, .offer_4_description,
 .offer_5_description, .offer_6_description, .offer_7_description, .offer_8_description {
   background-color: lightcoral;
+  display: flex; 
+}
+
+.offer_1_price, .offer_2_price, .offer_3_price, .offer_4_price, 
+.offer_5_price, .offer_6_price, .offer_7_price, .offer_8_price {
+  background-color: lightcyan;
+  display: flex; 
 }
