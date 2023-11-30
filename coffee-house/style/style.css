@@ -631,6 +631,11 @@ a:visited {
   font-weight: 400;
   line-height: 150%; /* 24px */
   margin-bottom: 40px;
+  margin-top: 47px; 
+}
+
+.download {
+  margin-top: 37px; 
 }
 
 .buttons {
@@ -707,7 +712,6 @@ a:visited {
   width: 200px;
   padding: 12px 20px;
   align-items: center;
-  gap: 8px;
   border-radius: 100px;
   border: 1px solid var(--border-dark, #665F55); 
 }
