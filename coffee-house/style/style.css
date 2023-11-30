@@ -1,5 +1,5 @@
 @import url(./normalize.css);
-@import url(./global.css);
+@import url(./_global.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 /* common */
@@ -185,6 +185,17 @@ a:visited {
   font-weight: 600;
   line-height: 75px;
   text-align: center;
+}
+
+.inner_text {
+  color: var(--text-accent, #B0907A);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Desktop/Heading/heading-2.accent */
+  font-family: Inter;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 125%;
 }
 
 .favorite__description {
@@ -676,15 +687,61 @@ a:visited {
   border-radius: 40px;
 }
 
-.hidden {
+/* .hidden {
   opacity: 0;
-}
+} */
 
 .contacts {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
   flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button_app_store, .button_google_play {
+  display: flex;
+  width: 200px;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid var(--border-dark, #665F55); 
+}
+
+.appstore_text, .googleplay_text {
+  color: var(--text-dark, #403F3D);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Desktop/Body/caption */
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 14px */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.appstore_img, .googleplay_img {
+  margin-right: 8px; 
+}
+
+.appstore_title, .googleplay_title {
+  color: var(--text-dark, #403F3D);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Desktop/Action/link & button */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  margin-top: 2px; 
 }
 
 .text_contacts {
@@ -903,6 +960,7 @@ a:visited {
   border: 1px solid var(--border-light, #C1B6AD);
   margin-left: 16px;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .tea_offer_text {
@@ -924,6 +982,7 @@ a:visited {
   gap: 8px;
   border-radius: 100px;
   border: 1px solid var(--border-light, #C1B6AD);
+  cursor: pointer;
 }
 
 .dessert_offer_text {
@@ -957,8 +1016,41 @@ a:visited {
 .offer_1_img, .offer_2_img, .offer_3_img, .offer_4_img,
 .offer_5_img, .offer_6_img, .offer_7_img, .offer_8_img {
   height: 330px;
+  transition: 1s ease;
   /* width: 340px;  */
   /* margin-bottom: 20px; */
+}
+
+.offer_1_img:hover {
+  transform: scale(0.9);
+}
+
+.offer_2_img:hover {
+  transform: scale(0.9);
+}
+
+.offer_3_img:hover {
+transform: scale(0.9);
+}
+
+.offer_4_img:hover {
+  transform: scale(0.9);
+}
+
+.offer_5_img:hover {
+  transform: scale(0.9);
+}
+
+.offer_6_img:hover {
+  transform: scale(0.9);
+}
+
+.offer_7_img:hover {
+  transform: scale(0.9);
+}
+
+.offer_8_img:hover {
+  transform: scale(0.9);
 }
 
 .offer_1, .offer_2, .offer_3, .offer_4, .offer_5, .offer_6, .offer_7, .offer_8 {
