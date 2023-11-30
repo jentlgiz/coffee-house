@@ -74,6 +74,15 @@ ul {
   width: 157px;
 }
 
+/* .coffee_li:after {
+
+}  */
+
+.coffee_li::hover:after,
+.coffee_li::focus:after {
+	width: 100%; 
+} 
+
 .about_li {
   width: 48px;
   margin-right: 40px;
@@ -107,6 +116,7 @@ a:visited {
 
 .header_menu a {
   transition: color 0.2s ease;
+  
 }
 
 .logo {
@@ -509,14 +519,13 @@ a:visited {
 .about_text {
   color: var(--text-dark, #403f3d);
   font-feature-settings: "clig" off, "liga" off;
-  /* Desktop/Heading/heading-2 */
   font-family: Inter;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 75px */
+  line-height: 125%;
   margin-bottom: 40px; 
-}
+} 
 
 .theperfect_place {
   color: var(--text-accent, #b0907a);
@@ -529,7 +538,7 @@ a:visited {
 }
 
 .about_text_container {
-  width: 1440px; /* 1440?*/
+  /* width: 1440px;  */
   position: relative;
   display: flex; 
   justify-content: center;
