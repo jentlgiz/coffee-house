@@ -71,17 +71,22 @@ ul {
 }
 
 .coffee_li {
-  width: 157px;
-}
-
-/* .coffee_li:after {
-
-}  */
-
-.coffee_li::hover:after,
-.coffee_li::focus:after {
-	width: 100%; 
+  width: 157px; 
+  line-height: 1;
+  text-decoration: none; 
 } 
+
+.coffee_li:hover {
+	width: 100%; 
+  border-bottom: 1px solid #000;
+	height: 1px; /*задаём ширину линии*/ /*задаём цвет линии*/
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+} 
+
+/* .coffee_li:hover:before,
+.coffee_li:focus:before {
+  width: 100%; 
+} */
 
 .about_li {
   width: 48px;
@@ -104,9 +109,9 @@ ul {
   gap: 8px;
 }
 
-.header_menu a:hover {
-  color: #000000; /*временно*/
-}
+/* .header_menu a:hover {
+  color: #000000; 
+} */
 
 a,
 a:visited {
