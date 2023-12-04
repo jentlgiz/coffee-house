@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <!-- mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- title, seo -->
     <title>Home</title>
     <!-- styles -->
@@ -84,8 +85,8 @@
                     </svg>
                 </div>
                 <nav class="header_menu">
-                    <ul>
-                        <li class="coffee_li"><a href="#favourcoffee">Favorite coffee</a></li>
+                    <ul class="header_main">
+                        <li class="coffee_li"><a class="coffee_li_text" href="#favourcoffee">Favorite coffee</a></li>
                         <li class="about_li"><a href="#about_cafe">About</a></li>
                         <li class="app_li"><a href="#offer_apps">Mobile app</a></li>
                         <li class="contact_li"><a href="#contacts_for_you">Contact us</a></li>
@@ -112,7 +113,7 @@
         </div>
     </header>
         <!-- enjoy block  -->
-        <section class="section_hero_cofee">
+        <section class="section_hero_coffee">
             <div class="container">
                 <div class="hero_container">
                     <div class="hero_offer">
@@ -185,14 +186,8 @@
                 catch up with friends, or get some work done.</h2>
         </div>
         <div class="about_container">
-            <div class="column_1">
-                <div class="img_about1"><img src="./img/about-1.png" alt="" class="img_about_1"></div>
-                <div class="img_about2"><img src="./img/about-2.png" alt="" class="img_about_2"></div>
-            </div>
-            <div class="column_2">
-                <div class="img_about3"><img src="./img/about-3.png" alt="" class="img_about_3"></div>
-                <div class="img_about4"><img src="./img/about-4.png" alt="" class="img_about_4"></div>
-            </div>
+            <div class="column_1"><div class="img_about1"></div><div class="img_about2"></div></div>
+            <div class="column_2"><div class="img_about3"></div><div class="img_about4"></div></div>
         </div>
     </div>
         <div class="offer">
@@ -227,8 +222,8 @@
     <!-- footer  -->
     <footer class="footer" id="contacts_for_you">
         <div class="contacts">
-            <span class="text_contacts"><a class="sip_savor">Sip, Savor, Smile.</a> <a class="coffee_time">It’s coffee
-                    time!</a></span>
+            <span class="text_contacts"><p class="sip_savor">Sip, Savor, Smile.</p>
+                <p class="coffee_time">It’s coffee time!</p></span>
             <div class="social_links">
                 <div class="twitter_link"><img src="./img/twitter.svg" alt="" class="twitter"></div>
                 <div class="insta_link"><img src="./img/instagram.svg" alt="" class="instagram"></div>
@@ -275,6 +270,5 @@
             </ul>
         </div>
     </footer>
-    <!-- <span class="hidden">here's something hidden</span> -->
 </body>
 </html>
