@@ -83,22 +83,12 @@ ul {
   width: 85px;
 }
 
-/* .coffee_li:hover {
-  text-decoration: underline;
-  height: 2px;
-} */
-
-/* .coffee_li_text {
-  left: 0; 
-  width: 0;
-  height: 2px;
-  transition: width 0.3s ease-out;
+.menu_logo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
-.coffee_li_text:hover {
-  text-decoration: underline;
-  width: 100%; 
-} */
 
 .menu_logo {
   margin-bottom: 20px;
@@ -1067,3 +1057,127 @@ a:visited {
   margin-top: 60px;
   margin-left: 20px;
 }
+
+@media (max-width:768px) {
+
+  .html {
+    width: 48rem;
+  }
+
+  .body {
+    width: 48rem; 
+    display: flex;
+    justify-content: center;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .header_nav {
+    height: 3.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .logo {
+    margin-bottom: 1.25rem;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  .menu_logo {
+    display: none;
+  }
+
+  .section_hero_coffee {
+    width: 43rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .container {
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .hero_container {
+    width: 43rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .hero_offer {
+    width: 43rem;
+    margin: 0rem;
+    padding: 0rem;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .offer_text {
+    margin-left: 3.75rem;
+  }
+
+  .offer_btn {
+    width: 12.5rem;
+    margin-left: 3.75rem;
+  }
+
+  .column_2 {
+    display: none; 
+  }
+
+  .main {
+    width: 48rem; 
+    display: flex;
+    justify-content: center;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    margin-top: 0rem;
+  }
+
+  .container {
+    width: 48rem;
+  }
+
+  .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer {
+    width: 43rem;
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts {
+    width: 43rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text_contacts {
+    width: 43rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6.25rem;
+  }
+
+  .social_links {
+    margin-bottom: 6.25rem;
+  }
+
+  .contact_links {
+    margin-bottom: 6.25rem;
+  }
+}
+
+
+
+
