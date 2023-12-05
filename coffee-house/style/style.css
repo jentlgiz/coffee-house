@@ -827,10 +827,17 @@ a:visited {
   gap: 20px;
 }
 
+.offer_menu_h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .offer_menu_text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .offer_behind {
